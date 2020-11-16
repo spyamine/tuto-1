@@ -43,6 +43,7 @@ class MyStrategy(bt.Strategy):
             self.sell()
 
 if __name__ == '__main__':
+    
     cerebro = bt.Cerebro()
     cerebro.addstrategy(MyStrategy)
     cerebro.broker.setcash(1337.0)

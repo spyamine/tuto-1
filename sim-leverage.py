@@ -118,3 +118,5 @@ ax = series.plot(title="UPRO/TMF allocation vs Sharpe")
 ax.set_ylabel("Sharpe Ratio")
 ax.set_xlabel("Percent Portfolio UPRO");
 print(f"Max Sharpe of {series.max():.3f} at {series.idxmax()}% UPRO")
+
+plt.show()

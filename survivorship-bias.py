@@ -1,22 +1,24 @@
-import requests
-from bs4 import BeautifulSoup
-from datetime import datetime, timedelta
-import json
-import pandas as pd 
+# import requests
+# from bs4 import BeautifulSoup
+# from datetime import datetime, timedelta
+# import json
+# import pandas as pd 
 
-x = 1 + 2 
-print (x)
-# request page
-html = requests.get("https://www.ishares.com/us/products/239726/#tabsAll").content
+
+# # request page
+# html = requests.get("https://www.ishares.com/us/products/239726/#tabsAll").content
 # soup = BeautifulSoup(html,features = "lxml")
+# # print (soup)
 
-
-# # find available dates
+# # find available dates 
 # holdings = soup.find("div", {"id": "holdings"})
-# dates_div = holdings.find_all("div", "component-date-list")[1]
+# # print (holdings)
+# dates_div = holdings.find_all("div", "component-date-list")[0]
+# # print (dates_div)
 # dates_div.find_all("option")
-# dates = [option.attrs["value"] for option in dates_div.find_all("option")]
 
+# dates = [option.attrs["value"] for option in dates_div.find_all("option")]
+# # print (dates)
 # # download constituents for each date
 # constituents = pd.Series()
 # for date in dates:
